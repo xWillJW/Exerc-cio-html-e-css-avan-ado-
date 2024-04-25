@@ -1,0 +1,112 @@
+body{
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'esquerda esquerda direita direita '
+                         'social social' ;
+    grid-template-columns: repeat(1, 1fr);
+}
+.fundo{
+    background-color: hsl(257, 40%, 49%);
+    position: relative;
+    width: 100%;
+}
+
+.esquerda{
+    position: absolute;
+    grid-area: esquerda;
+    display: flex;
+    flex-direction: column;
+    left:40px;
+    top: 60px;
+    width: 100%;
+}
+.logo{
+    width: 200px;
+    margin-bottom: 90px;
+}
+.quadro{
+    width: 650px;
+}
+
+.direita{
+    grid-area: direita;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+    top: 250px;
+    left: 750px;
+    width: 600px;
+    gap: 40px;
+}
+.direita h2{
+    font-size: 40px;
+    color: #fff;
+}
+.direita p{
+    font-size: 20px;
+    color: #fff;
+}
+.direita a{
+    color: hsl(257, 40%, 49%);
+}
+.registrar {
+    border-radius: 80px;
+    width: 170px;
+    height: 50px;
+    border: none;
+    transition: 0.4s;
+    }
+
+.direita button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+.direita a:hover{
+    color: #fff;
+}
+
+.social{
+    grid-area: social;
+    display: flex;
+    position: absolute;
+    top: 110%;
+    left: 88%;
+    gap: 10px;
+}
+
+.fa-facebook-f{
+    color: #fff;
+    font-size: 20px;
+}
+.fa-twitter{
+    color: #fff;
+    font-size: 20px;
+    
+}
+.fa-instagram{
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.social .socials{
+    border: solid #fff;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: hsl(257, 40%, 49%);
+}
+
+.social i:hover{
+    color: hsl(300, 69%, 71%);
+}
+.social .socials:hover{
+    border: solid hsl(300, 69%, 71%);
+}
